@@ -1,0 +1,22 @@
+先看看這些資料的列名稱
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+print(df["Month"])
+
+=======================================================================================
+
+
+選擇區間：
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+print(df["Month"][:10])

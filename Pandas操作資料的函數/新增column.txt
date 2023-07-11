@@ -1,0 +1,10 @@
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+
+df.insert(0,column="test",value="1000-00")
+
+print(df)

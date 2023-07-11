@@ -1,0 +1,8 @@
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+# 可以看到顯示了有哪些columns、大小和資料類型等等
+df.info()

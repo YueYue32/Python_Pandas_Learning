@@ -1,0 +1,26 @@
+從 “開頭” 的資料開始顯示
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+# 如果不指定參數，預設是顯示"5"筆
+print(df.head(3))
+
+===========================================================================================
+
+從 “結尾” 的資料開始顯示
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+# 如果不指定參數，預設是顯示"5"筆
+print(df.tail(3))
+
+===========================================================================================
+

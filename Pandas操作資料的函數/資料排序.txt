@@ -1,0 +1,23 @@
+順敘：
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+
+print(df.sort_values("Sales"))
+
+================================================================================
+
+倒敘：
+
+import pandas as pd
+
+
+path = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-car-sales.csv'
+df = pd.read_csv(path, header=0)
+
+
+print(df.sort_values("Sales",ascending= False))
